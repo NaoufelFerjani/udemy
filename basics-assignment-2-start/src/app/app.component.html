@@ -1,0 +1,14 @@
+<div class="container mt-5">
+  <div class="row justify-content-center">
+    <div class="col-md-8">
+      <h1 class="text-center mb-4">Assignment 2: Practicing Databinding</h1>
+      <div class="input-group mb-3">
+        <input type="text" class="form-control" placeholder="Enter your username" [(ngModel)]="userName">
+        <div class="input-group-append">
+          <button class="btn btn-primary" [disabled]="userName === ''" (click)="resetUserName()">Reset</button>
+        </div>
+      </div>
+      <p class="text-center mt-3" *ngIf="userName">Your Username: {{ userName }}</p>
+    </div>
+  </div>
+</div>
