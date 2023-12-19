@@ -1,0 +1,10 @@
+<div class="container">
+  <div class="row">
+    <h3>Assignment 3: Practicing Directives</h3>
+    <hr>
+   
+    </div>
+    <button class="btn btn-primary" (click)="changeDisplayDetails()" >Display Details</button>
+    <p  *ngIf="displayStatus">Lorem Ipsum is simply dummy text of the printing and typesetting industry...</p>
+  <p *ngFor="let log of logList" [ngClass]="{logText: log >= 5}" [ngStyle]="{'background-color': log >= 5 ? 'blue' : 'transparent' }" >The log count  = {{log}} </p>
+</div>
